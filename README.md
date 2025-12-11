@@ -1,90 +1,129 @@
-# 🎮 Video Game Sales & User Engagement Analysis  
-A comprehensive data analysis project exploring video game ratings, sales, user engagement, and industry trends using Python, MySQL, and Power BI.
+# 🎮 Video Game Sales & Engagement Analysis
 
-## 📌 Project Overview
-This project combines two datasets:  
-✔ `games.csv` → Game details (rating, reviews, engagement, genres, etc.)  
-✔ `vgsales.csv` → Worldwide sales data (NA, EU, JP, Other, Global)
+A clean and simple data analysis project exploring video game ratings, sales, genres, platforms, and user engagement using Python, SQL, and Power BI.
 
-We clean, merge, analyze both datasets, and answer **30 important analytical questions** through Python visualizations & Power BI dashboards.
+# 📌 Project Overview
 
----
+This project uses two datasets:
 
-## 🔧 Tech Stack
-- Python (Pandas, Matplotlib, Seaborn)
-- Jupyter Notebook
-- MySQL
-- Power BI
-- Git & GitHub
+games.csv → Ratings, genres, plays, wishlists
 
----
+vgsales.csv → Regional + global sales
 
-## 📂 Project Structure
-📁 Video_Game_Analysis/
+Goal:
+✔ Clean both datasets
+✔ Merge them
+✔ Perform EDA (30 questions)
+✔ Load to MySQL
+✔ Build Power BI dashboard
+
+# 🔧 Tech Used
+
+Python (Pandas, Matplotlib, Seaborn)
+
+MySQL
+
+Power BI
+
+Jupyter Notebook
+
+GitHub
+
+# 📂 Folder Structure
+Video_Game_Analysis/
 │
-├── 📁 data/
-│ ├── games_clean.csv
-│ ├── sales_clean.csv
-│ └── merged_games_sales.csv
+├── data/
+│   ├── games_clean.csv
+│   ├── sales_clean.csv
+│   └── clean_merged_games.csv
 │
-├── 📁 notebooks/
-│ └── final.ipynb
+├── notebooks/
+│   └── video_game_analysis.ipynb
 │
-├── 📁 sql/
-│ └── video_games_queries.sql
+├── sql/
+│   └── video_games_db.sql
 │
-├── 📁 dashboard/
-│ └── Video Game Sales Analysis.pptx
+├── PowerBi_Reports/
+│   └── Video Game Sales Analysis.pptx
 │
-├── README.md
-├── requirements.txt
-└── .gitignore
+└── README.md
 
+# 🧹 Data Cleaning Summary
 
----
+Removed duplicates
 
-## 🧹 Data Cleaning Summary
-- Removed duplicates  
-- Cleaned list-string columns  
-- Converted “K” values to integers  
-- Standardized release dates  
-- Normalized titles & merged datasets  
-- Exported cleaned datasets  
+Handled missing values (Rating, Team, Year, Publisher)
 
----
+Converted “K” → 1000 values
 
-## 📊 Analysis Performed (Python)
-- Top-rated games  
-- Most productive developer studios  
-- Genre-based engagement  
-- Regional sales comparison  
-- Platform-wise global sales  
-- High engagement vs low sales genres  
-- Ratings vs Sales correlation  
-- Trends in releases & sales  
+Cleaned list-string columns
 
----
+Standardized titles for merging
 
-## 🖥️ Power BI Dashboard
-Includes:
-- Genre Sales View  
-- Global Sales Breakdown  
-- Platform Sales  
-- Top Developers  
-- Ratings Analysis  
-- Engagement Insights  
-- Region Comparison  
-- KPIs & Filters  
+Exported clean datasets
 
----
+# 📊 Analysis Highlights
 
-## 🗄️ SQL Queries
-Includes sorting, filtering, grouping, joins, aggregations, top-N, and regional analysis.
+Using Python, I answered 30 EDA questions, including:
 
----
+⭐ Top-rated games
 
-## 📦 Installation
+🧩 Most popular genres
 
--------------------------------
+🏆 Best-selling platforms
+
+🌍 Region-wise sales
+
+🎯 Rating vs Sales relationship
+
+📈 Sales + Release Year trends
+
+🕹 High engagement vs low sales genres
+
+Charts were created for every question.
+
+# 📊 Power BI Dashboard
+
+The dashboard includes:
+
+Global & regional sales
+
+Genre & platform performance
+
+Top publishers
+
+Wishlist/Backlog insights
+
+Ratings distribution
+
+KPI Cards + Filters
+
+# 🗄 SQL Work
+
+Created tables for cleaned datasets
+
+Inserted merged data
+
+Performed joins, grouping, filtering
+
+Wrote analysis queries (Top N, Aggregations)
+
+# 🚀 Run the Project
+
+1️⃣ Install requirements
+
 pip install -r requirements.txt
----------------------------------
+
+
+2️⃣ Run Notebook
+
+video_game_analysis.ipynb
+
+
+3️⃣ Import SQL file into MySQL
+
+4️⃣ Open Power BI dashboard
+
+# 👨‍💻 Created By
+
+# Ritik Kumar
